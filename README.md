@@ -44,3 +44,14 @@ $ docker run --gpus all --rm -it \
 --name mmrotate_exec_env \
 pinto0309/mmrotate_exec_env:latest
 ```
+## 2. Test
+```bash
+$ wget https://download.openmmlab.com/mmrotate/v0.1.0/rotated_faster_rcnn/rotated_faster_rcnn_r50_fpn_1x_dota_le90/rotated_faster_rcnn_r50_fpn_1x_dota_le90-0393aa5c.pth
+$ wget https://download.openmmlab.com/mmrotate/v0.1.0/oriented_rcnn/oriented_rcnn_r50_fpn_1x_dota_le90/oriented_rcnn_r50_fpn_1x_dota_le90-6d2b2ce0.pth
+
+$ python demo/image_demo.py \
+demo/demo.jpg \
+configs/oriented_rcnn/oriented_rcnn_r50_fpn_1x_dota_le90.py  \
+oriented_rcnn_r50_fpn_1x_dota_le90-6d2b2ce0.pth \
+demo/vis.jpg
+```
