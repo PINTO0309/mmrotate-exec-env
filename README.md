@@ -55,3 +55,4 @@ configs/oriented_rcnn/oriented_rcnn_r50_fpn_1x_dota_le90.py  \
 oriented_rcnn_r50_fpn_1x_dota_le90-6d2b2ce0.pth \
 demo/vis.jpg
 ```
+![vis](https://user-images.githubusercontent.com/33194443/154785110-6aec81b4-1373-4bba-8704-b3c22f282f22.jpg)
